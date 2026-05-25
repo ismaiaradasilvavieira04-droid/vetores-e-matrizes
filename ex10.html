@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vetores e matrizes</title>
+</head>
+<body>
+    <script>
+        let encontrouZero = false
+
+        for (let i = 0; i <5; i++){
+         let n = parseInt(prompt("Digite um número: "))
+
+         if (n == 0) {
+            encontrouZero = true
+         }
+        }
+
+        if (encontrouZero == true) {
+            alert("o zero foi encontrado!")
+        }else if(encontrouZero == false) {
+            alert("O zero não foi encontrado")
+        }
+    </script>
+</body>
+</html>

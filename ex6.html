@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vetores e matrizes</title>
+</head>
+<body>
+    <script>
+        let mochila = []
+
+        for (let i = 0; i <10; i++) {
+            let n = parseInt(prompt("digite um número"))
+
+            mochila.push(n)
+        }
+
+        mochila.sort((a, b) => a - b);
+
+        alert("Os números em ordem crescente ficam da seguinte forma " + mochila)
+    </script>
+</body>
+</html>

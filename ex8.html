@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vetores e matrizes</title>
+</head>
+<body>
+    <script>
+        let somaPares = 0
+        let qtdPares = 0
+
+        let somaImpares = 0
+        let qtdImpares = 0
+
+        for (let i = 0; i <5; i++)
+        {
+            let n = parseInt(prompt("Digite um número: "))
+             if ( n % 2 == 0) {
+                somaPares += n
+                qtdPares++
+                } else {
+                    somaImpares += n 
+                    qtdImpares++
+                      }
+                    }
+                    if(qtdPares > 0) {
+                          let mediaPares = somaPares / qtdPares
+                          document.write("A média dos pares é " + mediaPares)
+
+                           } else {
+                            if(qtdImpares > 0) {
+                                let mediaImpares = somaImpares / qtdImpares   
+                            document.write("A média dos impares é " + mediaImpares)
+                                }
+                            }
+
+
+    </script>
+</body>
+</html>

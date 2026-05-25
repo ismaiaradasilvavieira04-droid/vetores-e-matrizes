@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vetores e matrizes</title>
+</head>
+<body>
+    <script>
+        let matriz = []
+
+        for(let l = 0; l < 3; l++){
+            matriz [l] = []
+            for (let c = 0; c < 3; c++) {
+                matriz[l][c] = parseInt(prompt("Digite um valor para [${l}] [${c}]"))
+
+            }
+        }
+
+        let resultado = '';
+
+       for(let l = 0; l < 3; l++){
+            for (let c = 0; c < 3; c++){
+                resultado += matriz[l][c] + ''
+            }
+            resultado += "\n"
+        }
+
+        alert("sua matriz 3x3 é \n" + resultado);
+    </script>
+</body>
+</html>

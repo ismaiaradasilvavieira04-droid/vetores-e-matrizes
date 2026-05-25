@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let matriz1 = []
+        let matriz2 = []
+        let iguais = true
+
+          for(let l = 0; l < 2; l++){
+            matriz1 [l] = []
+            for (let c = 0; c < 2; c++) {
+                matriz1[l][c] = parseInt(prompt("Digite um valor para [${l}] [${c}]"))
+
+               
+            }
+        }
+
+         for(let l = 0; l < 2; l++){
+            matriz2 [l] = []
+            for (let c = 0; c < 2; c++) {
+                matri2[l][c] = parseInt(prompt("Digite um valor para [${l}] [${c}]"))
+
+               
+            }
+        }
+
+        for(let l = 0; l < 2; l++){
+            for (let c = 0; c < 2; c++){
+                
+                if (matriz1[l][c] !== matriz2[l][c] ){
+                    iguais = false
+                }
+            }
+        }
+
+        if(iguais){
+            alert("Os números da matriz são iguais")
+        }else {
+            alert("Os números da matriz não são iguais")
+        }
+    </script>
+</body>
+</html>

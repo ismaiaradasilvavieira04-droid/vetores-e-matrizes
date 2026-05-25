@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vetores e matrizes</title>
+</head>
+<body>
+    <script>
+         let matriz1 = []
+         let matriz2 =[]
+         let matriz3 = []
+         let resultadoFinal = "";
+
+         for(let l = 0; l < 2; l++){
+            matriz1 [l] = []
+            for (let c = 0; c < 2; c++) {
+                matriz1[l][c] = parseInt(prompt("Digite um valor para [${l}] [${c}]"))
+
+
+            }
+        }
+
+        for(let l = 0; l < 2; l++){
+            matriz2 [l] = []
+            for (let c = 0; c < 2; c++) {
+                matriz2[l][c] = parseInt(prompt("Digite um valor para '[${l}] [${c}]'"))
+
+
+            }
+        }
+
+        for(let l = 0; l < 2; l++){
+            matriz3 [l] = []
+            for (let c = 0; c < 2; c++) {
+                matriz3 [l][c] = matriz1 [l][c] + matriz2 [l][c]
+
+                 resultadoFinal += matriz3[l][c]; + " ";
+            }
+            resultadoFinal += "\n"
+        }
+
+        alert("a soma das duas matrizes 2x2 é " + resultadoFinal)
+    </script>
+</body>
+</html>
